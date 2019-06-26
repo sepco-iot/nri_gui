@@ -1,0 +1,144 @@
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #444;
+    }
+    /*
+     * Formatting the header area
+     */
+    header {
+      background-color: #1D6F95;
+      height: 35px;
+      width: 100%;
+      opacity: .9;
+      margin-bottom: 50px;
+    }
+    header h1.logo {
+      margin: 0;
+      font-size: 1.7em;
+      color: #fff;
+      float: left;
+    }
+    header h1.logo:hover {
+      color: #fff;
+      text-decoration: none;
+      cursor: default;
+    }
+    /*
+     * Centering the body content
+     */
+    .container {
+      width: 85%;
+      margin: 0 auto;
+    }
+    div.home {
+      padding: 10px 0 30px 0;
+      background-color: #fff;
+    }
+    div.about {
+      padding: 10px 0 30px 0;
+      background-color: ##fff;;
+
+    }
+    h2 {
+      font-size: 1.8em;
+      margin-top: 30px;
+      text-align: center;
+      letter-spacing: -1px;
+    }
+    h3 {
+      font-size: 1.7em;
+      font-weight: 100;
+      margin-top: 30px;
+      text-align: center;
+      letter-spacing: -1px;
+      color: #999;
+    }
+    .menu {
+      float: right;
+      margin-top: 8px;
+      
+    }
+    .menu li {
+      display: inline;
+      padding: 20px 20px;
+    }
+    .menu li + li {
+      margin-left: 35px;
+    }
+    .menu li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .menu li a:hover {
+      color: #e4e4e4;
+      text-decoration: none;
+    }
+
+    .img {
+      width: 600px;
+      float: right;
+      display: flex;
+      justify-content: space-between;
+    }
+
+.img_container {
+  float: right;
+  margin-top: 30px;
+  position: relative;
+  width: 125px;
+  height: auto;
+
+}
+
+.thumbnail {
+  display: inline-block;
+  width: 125px;
+  height: 125px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 125px;
+  width: 125px;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #1D6F95;
+
+}
+
+.img_container:hover .overlay {
+  opacity: 1;
+
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.center {
+  display: inline-block;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+}
+
+.buttons {
+  width: 350px;
+  float: left;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
