@@ -4,18 +4,16 @@ body {
   font-family: Verdana, Tahoma, sans-serif;
   color: #444;
 }
-/*
- * Formatting the header area
- */
+
  @font-face {
-  font-family:'BYekan';/*تعریف یک نام برای فونت*/
-  src:url('font/BYekan.eot');/*اکسپلورر 9 به بعد*/
-  src:local('bYekan'),/*بررسی نصب بودن فونت در سیستم کاربر*/
-      local('b Yekan'),/*برای برخی از مرورگرها مانند سافاری*/
-      url('font/BYekan.eot?#iefix') format('embedded-opentype'),/*هک برای اکسپلورر 8 و ماقبل*/
-      url('font/BYekan.woff') format('woff'),/*مرورگر های جدید*/
-      url('font/BYekan.ttf') format('truetype'),/*تمام مرورگرها به جزء اکسپلورر*/
-      url('font/BYekan.svg#BYekan') format('svg');/*نسخه های قدیمی سیستم عامل iOS*/
+  font-family:'BYekan';
+  src:url('font/BYekan.eot');
+  src:local('bYekan'),
+      local('b Yekan'),
+      url('font/BYekan.eot?#iefix') format('embedded-opentype'),
+      url('font/BYekan.woff') format('woff'),
+      url('font/BYekan.ttf') format('truetype'),
+      url('font/BYekan.svg#BYekan') format('svg');
   font-style:normal;
   font-weight:normal;
 }
@@ -23,6 +21,10 @@ p {
   direction: rtl;
   font-family:'BYekan', Tahoma, 'Geneva', sans-serif;
 }
+
+/*
+ * Formatting the header area
+ */
 header {
   background-color: #1D6F95;
   height: 35px;
@@ -37,8 +39,6 @@ header h1.logo {
   float: left;
 }
 header h1.logo:hover {
-  color: #fff;
-  text-decoration: none;
   cursor: default;
 }
 /*
@@ -151,8 +151,6 @@ h3 {
 
 .center {
   display: inline-block;
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
 }
 
 .buttons {
