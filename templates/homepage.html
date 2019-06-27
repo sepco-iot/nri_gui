@@ -1,41 +1,44 @@
     {% extends "layout.html" %}
     {% block content %}
-      <div class="home">
-        <center>
-        <a href="{{ url_for('about') }}"><img src="/static/images/sep.jpg" alt="شرکت صنعت ارتباط پیشرو" width="250" height="250" class="center"></a>
-        </center>
-        <center><h2>پروژه هوشمند سازی پژوهشگاه نیرو</h2></center>
+<div class="home">
+    <center>
+      <a href="{{ url_for('about') }}"><img src="/static/images/sep.jpg" alt="شرکت صنعت ارتباط پیشرو" width="250" height="250" class="center"></a>
+    </center>
+  <center><h2>پروژه هوشمند سازی پژوهشگاه نیرو</h2></center>
 
 
 <div class="img">
-        <div class="img_container">
+    <div class="img_container">
         <a><img src="/static/images/lightness.png" alt="روشنایی" class="thumbnail"></a>
         <a href="">
-  <div class="overlay">
-    <div class="text">روشنایی</div>
-  </div></a>
-</div>
+          <div class="overlay">
+          <div class="text">روشنایی</div>
+          </div>
+        </a>
+    </div>
 
-        <div class="img_container">
+    <div class="img_container">
         <img src="/static/images/elec_meter.png" alt="کنتور برق" class="thumbnail">
         <a href="">
-  <div class="overlay">
-    <div class="text">کنتور برق</div>
-  </div></a>
+          <div class="overlay">
+          <div class="text">کنتور برق</div>
+          </div>
+        </a>
+    </div>
+
+    <div class="img_container">
+        <img src="/static/images/LoRaWAN_WaterMeter.png" alt="کنتور آب" class="thumbnail">
+        <a href="{{ url_for('emeterpage') }}">
+          <div class="overlay">
+          <div class="text">کنتور آب</div>
+          </div>
+        </a>
+    </div>
+
 </div>
 
-<div class="img_container">
-    <img src="/static/images/LoRaWAN_WaterMeter.png" alt="کنتور آب" class="thumbnail">
-    <a href="{{ url_for('emeterpage') }}">
-<div class="overlay">
-<div class="text">کنتور آب</div>
-</div></a>
-</div>
 
 </div>
-
-
-      </div>
     {% endblock %}
 
 
