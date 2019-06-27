@@ -1,87 +1,87 @@
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      color: #444;
-    }
-    /*
-     * Formatting the header area
-     */
-    header {
-      background-color: #1D6F95;
-      height: 35px;
-      width: 100%;
-      opacity: .9;
-      margin-bottom: 50px;
-    }
-    header h1.logo {
-      margin: 0;
-      font-size: 1.7em;
-      color: #fff;
-      float: left;
-    }
-    header h1.logo:hover {
-      color: #fff;
-      text-decoration: none;
-      cursor: default;
-    }
-    /*
-     * Centering the body content
-     */
-    .container {
-      width: 85%;
-      margin: 0 auto;
-    }
-    div.home {
-      padding: 10px 0 30px 0;
-      background-color: #fff;
-    }
-    div.about {
-      padding: 10px 0 30px 0;
-      background-color: ##fff;;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+}
+/*
+ * Formatting the header area
+ */
+header {
+  background-color: #1D6F95;
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 50px;
+}
+header h1.logo {
+  margin: 0;
+  font-size: 1.7em;
+  color: #fff;
+  float: left;
+}
+header h1.logo:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: default;
+}
+/*
+ * Centering the body content
+ */
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+div.home {
+  padding: 10px 0 30px 0;
+  background-color: #fff;
+}
+div.about {
+  padding: 10px 0 30px 0;
+  background-color: ##fff;;
 
-    }
-    h2 {
-      font-size: 1.8em;
-      margin-top: 30px;
-      text-align: center;
-      letter-spacing: -1px;
-    }
-    h3 {
-      font-size: 1.7em;
-      font-weight: 100;
-      margin-top: 30px;
-      text-align: center;
-      letter-spacing: -1px;
-      color: #999;
-    }
-    .menu {
-      float: right;
-      margin-top: 8px;
-      
-    }
-    .menu li {
-      display: inline;
-      padding: 20px 20px;
-    }
-    .menu li + li {
-      margin-left: 35px;
-    }
-    .menu li a {
-      color: #fff;
-      text-decoration: none;
-    }
-    .menu li a:hover {
-      color: #e4e4e4;
-      text-decoration: none;
-    }
+}
+h2 {
+  font-size: 1.8em;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+h3 {
+  font-size: 1.7em;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #999;
+}
+.menu {
+  float: right;
+  margin-top: 8px;
+  
+}
+.menu li {
+  display: inline;
+  /*padding: 20px 20px;*/
+}
+.menu li + li {
+  margin-left: 35px;
+}
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu li a:hover {
+  color: #e4e4e4;
+  text-decoration: none;
+}
 
-    .img {
-      width: 600px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-    }
+.img {
+  width: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
 
 .img_container {
   float: right;
