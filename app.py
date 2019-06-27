@@ -3,19 +3,21 @@ import os
 
 app = Flask(__name__, static_url_path='/static')
 
-
-
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def homepage():
-    if request.method == 'POST':
-        if request.form['submit'] == 'E-Meter':
-            return redirect(url_for('emeterpage'))
     return render_template("homepage.html")
 
+@app.route('/electricity_meter')
+def electricity_meter_page():
+    return render_template('electricity_meter.html')
 
-@app.route('/emeter')
-def emeterpage():
-    return render_template('emeter.html')
+@app.route('/water_meter')
+def water_meter_page():
+    return render_template('water_meter.html')
+
+@app.route('/street_light')
+def street_light_page():
+    return render_template('street_light.html')
 
 @app.route('/about/')
 def about():
