@@ -82,7 +82,7 @@ h3 {
 }
 .menu li {
   display: inline;
-  padding: 25px 25px;
+  padding: 10px 10px;
 }
 .menu li + li {
   margin-left: 35px;
