@@ -1,20 +1,26 @@
-    {% extends "layout.html" %}
-    {% block content %}
+{% extends "layout.html" %}
+{% block content %}
 
-<center><h2>Welcome to NRI Demo</h2></center>
+<div class="graphs">
 
-<div>
-<iframe src="https://snapshot.raintank.io/dashboard-solo/snapshot/6MeTgLHi7U2VPqjJHZ2snANxegaac5r4?orgId=2&panelId=2&from=1561620925308&to=1561624525308&theme=light"
-frameborder="0" scrolling="yes" style="overflow: hidden; height: 200; width: 450; float: middle;"></iframe>
-</div>
+  <h3>نمودار حجم آب مصرفی</h3>
 
+<center><iframe src="https://snapshot.raintank.io/dashboard-solo/snapshot/6MeTgLHi7U2VPqjJHZ2snANxegaac5r4?orgId=2&panelId=2&from=1561620925308&to=1561624525308&theme=light" width="900" height="450" frameborder="0"></iframe></center>
+
+  <p><b>نوع دستگاه:</b><br>کنتور آب مجهز به پروتکل ارتباطی LoRaWAN</p>
+  <p><b>محل نصب:</b><br>پژوهشگاه نیرو</p>
+  <p><b>تاریخ نصب</b><br> ۸/۴/۱۳۹۸</p>
+
+
+<!--
 <div class="buttons">
     <div>مدت نمایش</div>
     <button type="button">یک شبانه روز</button>
     <button type="button">یک هفته</button>
     <button type="button">یک ماه</button>
 </div>
-
-    {% endblock %}
+-->
+</div>
+{% endblock %}
 
 
