@@ -78,7 +78,7 @@
 
     .img {
       width: 600px;
-      float: right;
+      margin: auto;
       display: flex;
       justify-content: space-between;
     }
