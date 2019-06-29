@@ -1,25 +1,41 @@
 {% extends "layout.html" %}
 {% block content %}
 
+<script>
+  function setURL(url){
+    document.getElementById('iframe').src = url;
+  }
+</script>
+
+
 <div class="graphs">
 
-  <h3>نمودار حجم آب مصرفی</h3>
+  <!-- <h3>نمودار حجم آب مصرفی</h3> -->
 
-<center><iframe src="https://snapshot.raintank.io/dashboard-solo/snapshot/6MeTgLHi7U2VPqjJHZ2snANxegaac5r4?orgId=2&panelId=2&from=1561620925308&to=1561624525308&theme=light" width="900" height="450" frameborder="0"></iframe></center>
+  <center>
 
+  <iframe id="iframe" src="http://localhost:3000/d-solo/e3jrPBVZk/lorawan-water-meter?orgId=1&from=1561750200000&to=1561827901260&refresh=1m&theme=light&panelId=2" width="1100" height="450" frameborder="0"></iframe>
+
+  </center>
+
+
+
+
+    <div align="right" direction: rtl>:مدت نمایش</div>
+    <button type="button" class="buttons" onclick="setURL('http://localhost:3000/d-solo/e3jrPBVZk/lorawan-water-meter?orgId=1&from=1561750200000&to=1561827901260&refresh=1m&theme=light&panelId=2')">یک شبانه روز</button>
+
+    <button type="button" class="buttons" onclick="setURL('http://localhost:3000/d-solo/e3jrPBVZk/lorawan-water-meter?orgId=1&from=1561231800000&to=1561827874674&refresh=1m&theme=light&panelId=2')">یک هفته</button>
+
+    <button type="button" class="buttons" onclick="setURL('http://localhost:3000/d-solo/e3jrPBVZk/lorawan-water-meter?orgId=1&from=1559331000000&to=1561827846898&refresh=1m&theme=light&panelId=2')">یک ماه</button>
+
+ <br>
+ <br>
   <p><b>نوع دستگاه:</b><br>کنتور آب مجهز به پروتکل ارتباطی LoRaWAN</p>
   <p><b>محل نصب:</b><br>پژوهشگاه نیرو</p>
   <p><b>تاریخ نصب</b><br> ۸/۴/۱۳۹۸</p>
 
 
-<!--
-<div class="buttons">
-    <div>مدت نمایش</div>
-    <button type="button">یک شبانه روز</button>
-    <button type="button">یک هفته</button>
-    <button type="button">یک ماه</button>
-</div>
--->
+
 </div>
 {% endblock %}
 

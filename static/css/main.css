@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Tahoma, sans-serif;
+  font-family: 'BYekan', Tahoma, sans-serif;
   color: #444;
 }
 
@@ -30,7 +30,7 @@ header {
   height: 35px;
   width: 100%;
   opacity: .9;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 header h1.logo {
   margin: 0;
@@ -82,10 +82,10 @@ h3 {
 }
 .menu li {
   display: inline;
-  padding: 10px 10px;
+  padding: 5px 5px;
 }
 .menu li + li {
-  margin-left: 35px;
+  margin-left: 10px;
 }
 .menu li a {
   color: #fff;
@@ -154,9 +154,17 @@ h3 {
 }
 
 .buttons {
-  width: 350px;
-  float: left;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+
+  background-color: #1D6F95;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: right;
+
 }
